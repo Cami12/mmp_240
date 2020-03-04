@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+}
+
+.container{  
+    max-width: 1140px;
+    border: solid 3px #999;
+    padding:32px;
+    padding-top:16px;
+    margin:32px;
+
+}
+
+.orange-color{
+    color:orange;
+}
+
+.fluid-image{
+    width:100%;
+}
+
+p{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+h3{
+    margin-top: 1em;
+}
+
+nav{
+    background-color: lightgrey;
+    padding: 0.75em;
+    padding-left: 1em;
+    margin-top: 1em;
+    text-align: center;
+    
+}
+
+nav a{
+    color: #173F5F;
+    text-decoration: none;
+}
+.main-menu li{
+    display: inline;
+    margin-right: 8em;
+}
+
+h2, h3, h4 {
+    color: #173F5F;
+}
+
+.page-header{
+    font-family: arial black; 
+}
+
