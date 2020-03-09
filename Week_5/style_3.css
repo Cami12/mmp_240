@@ -43,7 +43,8 @@ h2{
 
 nav{
     float: right;
-    width: 25%;    
+    width: 100%; 
+    background-color: #D8D8D8;
 }
 
 nav a{
@@ -54,7 +55,8 @@ nav a{
 
 .menu-button{
     text-align: right;
-    padding-top: 0.50em;
+    padding-right: 0.2em;
+    padding-top: 0.2em;
 }
 
 .main-menu ul{
@@ -99,9 +101,8 @@ a:hover{
 }
 
 a:active{
-    color:orange;
+    color: #8295AF;
 }
-
 
 .fluid-image{
     width:100%;
@@ -125,3 +126,50 @@ h3{
 h2, h3, h4 {
     color: #173F5F;
 }
+
+/* ***** Desktop styles  **** */
+
+@media(min-width: 768px){
+    
+     header{
+        width:100%;
+    }
+    
+    .page-header h2{
+        font-size: 22px;
+    }
+
+     nav{
+        width:100%;
+    }   
+
+    .menu-button{
+        display: none;
+    }
+
+    .main-menu ul{
+        display:block;
+        border: none;
+        position:static;
+        width:100%;
+        text-align: center;
+        padding-left:5px;
+        background-color: #D8D8D8;
+        }
+
+    .main-menu li{
+        height:auto;
+        padding-top:5px;
+        padding-bottom:5px;
+        margin-bottom: 0;
+        border-bottom: none;
+        padding-left:2.5em;
+        padding-right: 2.5em;
+        display: inline-block;
+        background-color: #D8D8D8;
+        width:100px;
+        margin-left:1px;
+        margin-right:0;
+        text-align: center;
+        }
+    
