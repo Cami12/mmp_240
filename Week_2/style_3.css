@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+}
+
+.container{  
+    max-width: 1140px;
+    padding:16px;
+    padding-top:16px;
+     position:relative; /* acts as a ref point to positioned elements inside it */
+}
+
+body{
+    font-family: Lato, Roboto;
+}
+
+/* Header and Nav Styles */
+
+header{ 
+width: 100%;
+}
+
+header img{
+    max-width: 95%;
+}
+
+.page-header{
+    font-family: arial black; 
+}
+
+h1{
+    float: left;
+    width: 190px;
+}
+
+h2{
+    font-size: 16px;
+    text-align: right;
+    padding-top: 1em;
+    line-height: 1.2em;
+}
+
+nav{
+    float: left;
+    width: 100%; 
+    background-color: #D8D8D8;
+}
+
+nav a{
+    color: #173F5F;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.menu-button{
+    text-align: left;
+    padding-left: 0.2em;
+    padding-top: 0.2em;
+}
+
+.main-menu ul{
+    /*display: none;*/
+    list-style-type: none;
+    padding: 0.2em;
+    border: solid 1px #333;
+    position:absolute;
+    left:16px;
+    width:100px;
+    background-color: whitesmoke;
+}
+
+.main-menu li{
+    height: 30px;
+    margin-bottom: 2px;
+    padding-top:6px;
+    border-bottom: solid 1px #333;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.main-menu li:last-child{ /* targets last list item */
+   border-bottom: none;
+    margin-bottom:0;
+}
+
+.main-menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* ******* */
+
+a{
+    color:#173F5F;
+}
+
+a:hover{
+    color:#005897;
+}
+
+a:active{
+    color: #8295AF;
+}
+
+.fluid-image{
+    width:100%;
+    padding-top: 0.5em;
+}
+
+.page-main h2{
+    text-align: left;
+}
+
+p{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+h3{
+    margin-top: 1em;
+    text-align: center;
+}
+
+h2, h3, h4 {
+    color: #173F5F;
+}
+
+.search{
+    height: 25px;
+    padding-top: 0.2em;
+    border: solid 1px #333;
+    width: 180px;
+    float: right;
+    margin-top: 2px;
+    margin-right: 3px;
+}
+
+.search input{
+    border: solid 1px #333;
+    line-height: 1em;
+    margin-left: 3px;
+    padding: 3px;
+    margin-top: 1px;
+    width: 130px;
+}
+
+
+/* ***** Desktop styles  **** */
+
+@media(min-width: 768px){
+    
+     header{
+        width:100%;
+    }
+    
+    .page-header h2{
+        font-size: 22px;
+    }
+
+     nav{
+        width:100%;
+    }   
+
+    .menu-button{
+        display: none;
+    }
+
+    .main-menu ul{
+        display:block;
+        border: none;
+        position:static;
+        width:100%;
+        text-align: center;
+        padding-left:5px;
+        background-color: #D8D8D8;
+        }
+
+    .main-menu li{
+        height:auto;
+        padding-top:5px;
+        padding-bottom:5px;
+        margin-bottom: 0;
+        border-bottom: none;
+        padding-left:2.5em;
+        padding-right: 2.5em;
+        display: inline-block;
+        background-color: #D8D8D8;
+        width:100px;
+        margin-left:1px;
+        margin-right:0;
+        text-align: center;
+        }
+}
