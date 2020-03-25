@@ -6,9 +6,7 @@
 
 .container{  
     max-width: 1140px;
-    padding:16px;
-    padding-top:16px;
-     position:relative; /* acts as a ref point to positioned elements inside it */
+    padding: 1em;
 }
 
 body{
@@ -42,7 +40,7 @@ h2{
 }
 
 nav{
-    float: right;
+    float: left;
     width: 100%; 
     background-color: #D8D8D8;
 }
@@ -54,34 +52,50 @@ nav a{
 }
 
 .menu-button{
-    text-align: right;
-    padding-right: 0.2em;
+    text-align: left;
+    padding-left: 0.2em;
     padding-top: 0.2em;
+    
+}
+
+.dropbtn{
+    border: solid 1px #ADADAD;
+    height: 33px;
+}
+
+.search{
+    height: 28px;
+    padding-top: 0.1em;
+    border: solid 1px #909090;
+    width: 170px;
+    float: right;
+    margin-bottom: 1px;
+    margin-right: 3px;
+}
+
+.search input{
+    border: solid 1px #909090;
+    line-height: 1em;
+    margin-left: 3px;
+    padding: 4px;
+    margin-top: 1px;
+    width: 125px;
+}
+
+.search button{
+    margin-top: 2px;
+    float: right;
+    margin-right: 0.75em;
+    background-color: #D8D8D8;   
 }
 
 .main-menu ul{
-    /*display: none;*/
-    list-style-type: none;
-    padding: 0.2em;
-    border: solid 1px #333;
-    position:absolute;
-    right:16px;
-    width:100px;
-    background-color: whitesmoke;
+   list-style-type: none;
 }
 
 .main-menu li{
-    height: 30px;
-    margin-bottom: 2px;
-    padding-top:6px;
-    border-bottom: solid 1px #333;
-    background-color: whitesmoke;
-    text-align: center;
-}
-
-.main-menu li:last-child{ /* targets last list item */
-   border-bottom: none;
-    margin-bottom:0;
+    padding:5px;
+    border-bottom: solid 1px #000;
 }
 
 .main-menu a{
@@ -89,6 +103,24 @@ nav a{
     text-transform: uppercase;
     font-size: 14px;
 }
+
+.dropdown ul a{
+    font-size: 13px;
+}
+
+.menubar{
+    width:130px;
+    background-color: whitesmoke;
+    border: solid 1px #000; 
+    position: absolute;
+}
+
+.dropdown li{
+    border:none;
+    text-align: center;
+}
+
+
 
 /* ******* */
 
@@ -143,33 +175,83 @@ h2, h3, h4 {
         width:100%;
     }   
 
-    .menu-button{
+    .menu-button .dropbtn{
         display: none;
     }
 
-    .main-menu ul{
-        display:block;
-        border: none;
-        position:static;
-        width:100%;
-        text-align: center;
-        padding-left:5px;
-        background-color: #D8D8D8;
-        }
-
     .main-menu li{
-        height:auto;
-        padding-top:5px;
-        padding-bottom:5px;
-        margin-bottom: 0;
-        border-bottom: none;
-        padding-left:2.5em;
-        padding-right: 2.5em;
-        display: inline-block;
-        background-color: #D8D8D8;
-        width:100px;
-        margin-left:1px;
-        margin-right:0;
-        text-align: center;
+        display:inline-block;
+        border:none;
         }
     
+    .menubar ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex: auto;
+    }
+    
+     .menubar{
+        position:static;
+        width:auto;
+        border:none;
+        display:flex;
+        flex-direction: row;
+        background-color: #D8D8D8;
+    }
+    
+    .dropdown li{
+        display:block;
+        margin-left: 0;
+        
+    }
+    
+    .dropdown ul{
+        text-align: center;
+        border: solid 1px #ccc;
+        padding:3px;
+        background-color: whitesmoke;
+        width:120px;
+        position:absolute;
+        display:none;
+    }
+    
+    .dropdown:hover ul{
+        display:block;
+    }
+    
+    .dropdown ul a{
+        font-size: 14px;
+        text-transform: none;
+    }
+    
+    
+/* Search menu */    
+    
+    .search{
+        height: 28px;
+        padding-top: 0.1em;
+        border: solid 1px #909090;
+        width: 190px;
+        float: right;
+        margin-bottom: 2px;
+        margin-right: 3px;
+    }
+
+    .search input{
+        border: solid 1px #909090;
+        line-height: 1em;
+        margin-left: 3px;
+        padding: 4px;
+        margin-top: 1px;
+        width: 145px;
+    }
+
+    .search button{
+        margin-top: 2px;
+        float: right;
+        margin-right: 0.75em;
+        background-color: #D8D8D8;   
+    }
+
+}
