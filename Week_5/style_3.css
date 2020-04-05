@@ -13,6 +13,10 @@ body{
     font-family: Lato, Roboto;
 }
 
+.page-main ul{
+    margin-left: 2em;
+}
+
 /* Header and Nav Styles */
 
 header{ 
