@@ -5,22 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CUNY Design Programs</title>
         <link rel="stylesheet" href="style_3.css">
+        <script>
+            function showMenu(){
+                var menu = document.getElementById("menu");
+                if (menu.style.display==="none"){menu.style.display="block";
+                } else {
+                    menu.style.display="none"
+                }
+            }
+        </script>
+        
     </head>
     <body>
         <div class="container">
             <header class="page-header">
-                <h1> <img src="images/Logo.png" alt="Logo" > </h1>
+                <h1> <a href="index.html"><img src="images/Logo.png" alt="Logo"></a> </h1>
                 <h2> Design programs across CUNY</h2>
     </header>
             
         <nav class="main-menu"> 
-        <div class="menu-button"><button class="dropbtn"><img src="images/nav.png" width="35" alt="nav-bar"></button>
+        <div class="menu-button"><button class="dropbtn"><img src="images/nav.png" width="35" alt="nav-bar" onclick="showMenu();"></button>
         <form class="search" action="#" method="post">
             <input type="search" placeholder="Search">
             <button type="submit"><img src="images/search.png" width="20" alt="sub-btn"></button>
         </form>
         </div>
-        <div class="menubar">      
+        <div class="menubar" id="menu">   
             <ul>
                 <li class="dropdown"><a href="#">Degrees</a>
                     <ul>
@@ -35,7 +45,7 @@
                         <li><a href="ID-DS.html">Industrial Design</a></li> 
                     </ul>                 
                 </li>
-                <li><a href="#">Apply</a></li>
+                <li><a href="https://www.cuny.edu/admissions/apply-to-cuny/">Apply</a></li>
             </ul>  
         </div>
         </nav>
@@ -49,8 +59,13 @@
                 <p>Students take courses from three categories: Studio, Strategy, and Skills. In the required sequence of four Studio courses, students initiate and define the context for substantive projects. Selecting from an elective pool, each student takes three Strategy courses and four Skills courses. In Strategy courses, students research, plan, produce and consider dissemination of visual communications. In Skills courses, students create solutions to communication design problems using a particular medium. Students may either sample a range of the Communication Design field or specialize in one of the following areas: Advertising, Graphic Design, Illustration or Web Design.</p>
                 
                 <p><a href="http://www.citytech.cuny.edu/communication-design/communication-design-bfa.aspx"><i>Learn More</i></a></p>
-            </main>
+                
+                
             <footer class="page-footer"> CITY UNIVERSITY OF NEW YORK &copy; Copyright 2020</footer>
+            
+            
+            </main>
+            
         </div>
     </body>
 </html>
